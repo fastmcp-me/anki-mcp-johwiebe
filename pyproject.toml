@@ -4,7 +4,9 @@ version = "0.2.0-alpha.1"
 description = "An Anki MCP server"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = [ "mcp>=1.5.0",]
+dependencies = [
+ "mcp>=1.5.0",
+]
 [[project.authors]]
 name = "Johannes Wiebe"
 email = "johanneswiebe@posteo.de"
@@ -16,6 +18,9 @@ build-backend = "hatchling.build"
 [dependency-groups]
 dev = [
     "pytest>=8.3.5",
+    "duckdb>=1.2.1",
+    "pytest-asyncio>=1.3.0",
+    "coverage>=7.13.0",
 ]
 
 [project.scripts]
